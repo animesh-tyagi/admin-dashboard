@@ -1,17 +1,29 @@
+@font-face {
+    font-family: RobotoMono-Medium;
+    src: url(./fonts/RobotoMono-Medium.ttf);
+}
+
 body {
     height: 100vh;
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-columns: 0.80fr 2fr 0.80fr;
-    grid-template-rows: 1fr 2fr 2fr;
+    grid-template-columns: 0.70fr 2fr 0.75fr;
+    grid-template-rows: 0.80fr 2fr 2fr;
+    font-family: RobotoMono-Medium;
 
     
 }
 
 .sidebar {
+    font-size: 30px;
     display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.375fr 0.225fr;
+    gap: 50px;
     background: rgb(0, 140, 215);
+    color: white;
+    padding: 25px;
     grid-area: 1/1/4/2;
 }
 
@@ -24,7 +36,7 @@ body {
 
 .projects {
     display: grid;
-    background: rgb(212, 219, 227);
+    background: rgb(217, 225, 233);
     grid-template-columns: 1fr;
     grid-area: 2/2/4/3;
 }
@@ -32,12 +44,57 @@ body {
 .announcements {
     display: grid;
     grid-template-columns: 1fr;
-    background: rgb(212, 219, 227);
+    background: rgb(217, 225, 233);
 }
 
 .trending {
     display: grid;
     grid-template-columns: 1fr;
-    background: rgb(212, 219, 227);
+    background: rgb(217, 225, 233);
 }
+
+.sidebar ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr;
+
+}
+
+.logo svg {
+    height: 45px;
+    width: 45px;
+    fill: #FFFFFF;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.logo p {
+    margin: 0;
+    font-size: 35px;
+    place-content: center;
+}
+
+.nav svg, .options svg {
+    height: 30px;
+    width: 30px;
+    fill: #FFFFFF;
+}
+
+.nav li, .options li{
+    padding-left: 7px;
+    display: flex;
+    flex-direction: row;
+    gap: 27px;
+    align-items: center;
+    
+}
+
 
