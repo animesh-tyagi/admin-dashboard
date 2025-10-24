@@ -8,15 +8,14 @@ body {
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-columns: 0.70fr 2fr 0.75fr;
-    grid-template-rows: 0.80fr 2fr 2fr;
+    grid-template-columns: 0.70fr 2fr 1.1fr;
+    grid-template-rows: 1fr 2fr 2fr;
     font-family: RobotoMono-Medium;
 
     
 }
 
-.sidebar {
-    font-size: 30px;
+    .sidebar {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.1fr 0.375fr 0.225fr;
@@ -31,6 +30,12 @@ body {
     display: grid;
     background: rgb(255, 255, 255);
     grid-area: 1/2/2/4;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 45px 80px;
+    gap: 35px;
+    padding: 25px 50px;
+    padding-right: 70px;
+    font-weight: 700;
 
 }
 
@@ -54,6 +59,7 @@ body {
 }
 
 .sidebar ul {
+    font-size: 20px;
     padding: 0;
     margin: 0;
     list-style-type: none;
@@ -78,7 +84,7 @@ body {
 
 .logo p {
     margin: 0;
-    font-size: 35px;
+    font-size: 30px;
     place-content: center;
 }
 
@@ -97,4 +103,101 @@ body {
     
 }
 
+.search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+    flex: 1;
+    gap: 10px;
+}
+
+.search svg {
+    height: 30px;
+}
+
+.search-bar {
+    background: rgb(217, 225, 233);
+    height: 40px;
+    width: 700px;
+    border-radius: 30px;
+}
+
+.notif {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    gap: 25px;
+}
+
+.notif svg {
+    height: 30px;
+}
+
+.notif p{
+    margin: 0;
+    font-size: 25px;
+}
+
+.notif img {
+    height: 45px;
+    width: 45px;
+    border: 2px solid black;
+    border-radius: 45px;
+    background: rgb(217, 225, 233);
+}
+
+.info {
+    display: flex;
+    flex: 1;
+    gap: 20px;
+    align-items: center;
+}
+
+.info img{
+    height: 70px;
+    width: 70px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background: rgb(217, 225, 233);
+}
+
+.msg p{
+    margin: 0;
+
+}
+
+.msg {
+    display: flex;
+    flex-direction: column;
+}
+
+.msg .greetings {
+    font-size: 15px;
+    font-weight: 700;
+}
+.msg .name {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.buttons {
+    display: flex;
+    flex: 1;
+    gap: 10px;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.buttons button{
+    color: white;
+    background: rgb(0, 140, 215);
+    border: none;
+    height: 45px;
+    width: 120px;
+    font-size: 17px;
+    border-radius: 45px;
+
+}
 
