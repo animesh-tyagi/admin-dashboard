@@ -4,7 +4,6 @@
 }
 
 body {
-    display: flex;
     height: auto;
     margin: 0;
     padding: 0;
@@ -189,7 +188,7 @@ body {
     background: rgb(217, 225, 233);
     flex-direction: column;
     grid-area: 2/2/4/3;
-    padding: 20px 15px;
+    padding: 20px 15px; 
 }
 
 .projects p, .announcements p, .trending p {
